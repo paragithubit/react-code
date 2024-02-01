@@ -8,14 +8,14 @@ function TestForm(props) {
           // console.log ('Upper case is clicked');
              let newText =   text.toUpperCase();
                 setText(newText);             
-                props. showAlert ('UpperCase was cliked','success');
+                props.showAlert ('UpperCase was cliked','success');
        }
               /*Lower Case*/
           const handleloclick =()=>{
            // console.log ('lower case is clicked'); 
               let newText =text.toLowerCase();
                 setText(newText);
-                props. showAlert ('LowerCase was cliked','success');
+                props.showAlert ('LowerCase was cliked','success');
           }
             
              /*Clear Case*/
@@ -23,7 +23,7 @@ function TestForm(props) {
                  // console.log ('clear text')
                     let newText = '';
                       setText(newText)
-                      props. showAlert ('Clear text','success');                  
+                      props.showAlert ('Clear text','success');                  
               }  
               const handleonchange =(event)=>{
                // console.log ('on changes')

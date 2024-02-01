@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import TestForm from './components/TestForm';
 import Alert from './components/Alert';
 import About from './components/About';
-import {BrowserRouter as Main ,Route,Routes,Link} from 'react-router-dom';
+
   
 
 
@@ -44,19 +44,14 @@ function App() {
        
   return (
  <>
-     <Main>
-       <Routes>
-          <Route exact path='/' element ={ <Navbar title = 'Home' about= 'About' mode={mode} toogleMode={toogleMode} />}/>
-           <Route exact path='Alert' element ={<Alert alert = {alert}/>}/>
+     
+           <Navbar title = 'Home' about= 'About' mode={mode} toogleMode={toogleMode} />
+           <Alert alert = {alert}/>
            <div className="cintainer mx-3"></div> 
-             <Route exact path='TestForm' element= { <TestForm  mode ={mode}  showAlert={ showAlert} heading='Enter the Text'/>}/>
-                <Route exact path='About' element = {<About/>}/>
+              <TestForm  mode ={mode}  showAlert={ showAlert} heading='Enter the Text'/>
+                <About/>
 
-                        
-              </Routes>
-            
-  
-              </Main> 
+                    
      </>
     
      );

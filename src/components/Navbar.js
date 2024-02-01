@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
 
 
 
@@ -16,10 +16,10 @@ function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">{props.title}</Link>
+          <a  className="nav-link active" aria-current="page" href="/">{props.title}</a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/">{props.about}</Link>
+          <a  className="nav-link" href="/">{props.about}</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
